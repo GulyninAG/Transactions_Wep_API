@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Transactions Web API</title>
+    <style>
+        body {
+            padding:10px;
+        }
+
+        td {
+            padding: 2px;
+        }
+
+        button {
+            margin: 2px;
+        }
+
+        .btn-rmv {
+            background-color: #0d6efd !important;
+        }
+    </style>
+</head>
+<body class="container">
+    <h2>Сохранить транзакцию</h2>
+    <div>
+        <input type="hidden" id="transactionId" />
+        <p>
+            Дата транзакции<br />
+            <input class="form-control" id="transactionDate" type="date" required />
+        </p>
+        <p>
+            Сумма:<br />
+            <input class="form-control" id="transactionAmount" type="number" required />
+        </p>
+        <p>
+            <button id="saveBtn" class="btn btn-primary" type="submit">Сохранить транзакцию</button>
+            <button id="resetBtn" class="btn btn-secondary">Сбросить</button>
+        </p>
+    </div>
+
+    <h2>Получить транзакцию по ID</h2>
+    <div>
+        <p>
+            Id транзакции:<br />
+            <input class="form-control" id="oneTransactionId" />
+        </p>
+        <p>
+            Дата транзакции:<br />
+            <input class="form-control" id="oneTransactionDate" readonly />
+        </p>
+        <p>
+            Сумма:<br />
+            <input class="form-control" id="oneTransactionAmount" readonly />
+        </p>
+        <p>
+            <button id="getTransactionBtn" class="btn btn-primary">Получить транзакцию</button>
+            <button id="oneResetBtn" class="btn btn-secondary">Сбросить</button>
+        </p>
+    </div>
+
+    <h2>Список всех транзакций</h2>
+    <table class="table table-hover table-borderless">
+        <thead><tr><th>Id транзакции</th><th>Дата транзакции</th><th>Сумма</th><th></th></tr></thead>
+        <tbody id="transactionsTable">
+        </tbody>
+    </table>
+
+    <script>
+        // Получение всех транзакций
+        async function getTransactions() {
+
+            const response = await fetch("/api/v1/Transactions", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+
+            if (response.ok === true) {
+                const transactions = await response.json();
+                const rows = document.querySelector("tbody");
+                //console.log(transactions);
+                transactions.forEach(transaction => rows.append(row(transaction)));
+            }
+        }
+
+        // Получение одной транзакции
+        async function getTransaction(id, isInserted = false) {
+            const response = await fetch(`/api/v1/Transaction?id=${id}`, {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const transaction = await response.json();
+                if (!isInserted) {
+                    document.getElementById("oneTransactionDate").value = transaction.transactionDate;
+                    document.getElementById("oneTransactionAmount").value = transaction.amount;
+                }
+                else return transaction;
+            }
+            else {
+                const error = await response.json();
+                //console.log(error.message);
+            }
+        }
+
+        // Добавление транзакции
+        async function createTransaction(transactionDate, transactionAmount) {
+            if (transactionDate == "" || transactionAmount == "") return;
+            const id = generate_guid();
+            const response = await fetch("/api/v1/Transaction", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    Id: id,
+                    TransactionDate: transactionDate,
+                    Amount: parseFloat(transactionAmount)
+                })
+            });
+            if (response.ok === true) {
+                //const transaction = await response.json();
+                const transaction = await getTransaction(id, true);
+                if (transaction != null) {
+                    document.querySelector("tbody").append(row(transaction));
+                }
+            }
+            else {
+                const error = await response.json();
+                //console.log(error.message);
+            }
+        }
+
+        // Удаление транзакции
+        async function deleteTransaction(id) {
+            const response = await fetch(`/api/v1/Transaction/Delete/${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const transaction = await response.json();
+                document.querySelector(`tr[data-rowid='${transaction.id}']`).remove();
+            }
+            else {
+                const error = await response.json();
+                //console.log(error.message);
+            }
+        }
+
+        // Создание строки для таблицы
+        function row(transaction) {
+
+            if (transaction != null) {
+                const tr = document.createElement("tr");
+                tr.setAttribute("data-rowid", transaction.id);
+
+                const idTd = document.createElement("td");
+                idTd.append(transaction.id);
+                tr.append(idTd);
+
+                const dateTd = document.createElement("td");
+                dateTd.append(transaction.transactionDate);
+                tr.append(dateTd);
+
+                const amountTd = document.createElement("td");
+                amountTd.append(transaction.amount);
+                tr.append(amountTd);
+
+
+                const removeLink = document.createElement("button");
+                removeLink.append("Удалить транзакцию");
+                removeLink.className = "btn-rmv btn btn-primary";
+                removeLink.addEventListener("click", async () => await deleteTransaction(transaction.id));
+
+                tr.appendChild(removeLink);
+
+                return tr;
+            }
+        }
+
+        function reset() {
+            document.getElementById("transactionId").value = "";
+            document.getElementById("transactionDate").value = "";
+            document.getElementById("transactionAmount").value = "";
+        }
+
+        function resetOne() {
+            document.getElementById("oneTransactionId").value = "";
+            document.getElementById("oneTransactionDate").value = "";
+            document.getElementById("oneTransactionAmount").value = "";
+        }
+
+        function generate_guid() {
+            var dt = new Date().getTime();
+            return 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'.replace(/[x]/g,
+                function (c) {
+                    var rnd = Math.random() * 16;
+                    rnd = (dt + rnd) % 16 | 0;
+                    dt = Math.floor(dt / 16);
+                    return (c === 'x' ? rnd : (rnd & 0x3 | 0x8)).toString(16);
+                });
+        }
+
+        document.getElementById("resetBtn").addEventListener("click", () => reset());
+
+        document.getElementById("oneResetBtn").addEventListener("click", () => resetOne());
+
+        document.getElementById("getTransactionBtn").addEventListener("click", async () => {
+
+            const transactionId = document.getElementById("oneTransactionId").value;
+            await getTransaction(transactionId);
+        });
+
+        document.getElementById("saveBtn").addEventListener("click", async () => {
+
+            const transactionId = document.getElementById("transactionId").value;
+            const transactionDate = document.getElementById("transactionDate").value;
+            const transactionAmount = document.getElementById("transactionAmount").value;
+            await createTransaction(transactionDate, transactionAmount);
+            reset();
+        });
+
+        getTransactions();
+    </script>
+</body>
+</html>
