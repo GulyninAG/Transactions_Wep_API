@@ -1,0 +1,36 @@
+12/27/2024 13:00:33. Now listening on: http://localhost:5133
+12/27/2024 13:00:33. Application started. Press Ctrl+C to shut down.
+12/27/2024 13:00:33. Hosting environment: Development
+12/27/2024 13:00:33. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+12/27/2024 13:05:56. Now listening on: http://localhost:5133
+12/27/2024 13:05:56. Application started. Press Ctrl+C to shut down.
+12/27/2024 13:05:56. Hosting environment: Development
+12/27/2024 13:05:56. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+12/27/2024 13:07:48. Now listening on: http://localhost:5133
+12/27/2024 13:07:48. Application started. Press Ctrl+C to shut down.
+12/27/2024 13:07:48. Hosting environment: Development
+12/27/2024 13:07:48. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+12/27/2024 13:07:55. An unhandled exception has occurred while executing the request.
+12/27/2024 13:08:42. An unhandled exception has occurred while executing the request.
+12/27/2024 13:11:05. Now listening on: http://localhost:5133
+12/27/2024 13:11:05. Application started. Press Ctrl+C to shut down.
+12/27/2024 13:11:05. Hosting environment: Development
+12/27/2024 13:11:05. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+12/27/2024 13:20:03. Now listening on: http://localhost:5133
+12/27/2024 13:20:03. Application started. Press Ctrl+C to shut down.
+12/27/2024 13:20:03. Hosting environment: Development
+12/27/2024 13:20:03. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+12/27/2024 13:20:27. An unhandled exception has occurred while executing the request.
+12/27/2024 13:20:36. An unhandled exception has occurred while executing the request.
+12/27/2024 13:20:50. An unhandled exception has occurred while executing the request.
+12/27/2024 13:21:02. An unhandled exception has occurred while executing the request.
+12/27/2024 13:21:30. An unhandled exception has occurred while executing the request.
+12/27/2024 13:22:06. Now listening on: http://localhost:5133
+12/27/2024 13:22:06. Application started. Press Ctrl+C to shut down.
+12/27/2024 13:22:06. Hosting environment: Development
+12/27/2024 13:22:06. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+12/27/2024 13:22:13. An unhandled exception has occurred while executing the request.
+12/27/2024 13:25:21. Now listening on: http://localhost:5133
+12/27/2024 13:25:21. Application started. Press Ctrl+C to shut down.
+12/27/2024 13:25:21. Hosting environment: Development
+12/27/2024 13:25:21. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API

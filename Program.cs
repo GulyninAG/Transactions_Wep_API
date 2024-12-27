@@ -42,7 +42,7 @@ app.MapGet("/api/v1/Transaction", async (string id, ILogger<FileLogger> logger, 
       logger.LogInformation("Транзакция не найдена.");
       throw new Exception("Транзакция не найдена.");
     }
-    return Results.Ok(transaction);
+    return Results.Json(transaction, statusCode: 200);
   }
   else
   {
@@ -73,11 +73,11 @@ app.MapPost("/api/v1/Transaction", async Task<IResult>(Transactions_Web_API.Mode
     throw new Exception("Сумма должна быть положительной.");
   }
 
-  transaction.InsertDateTime = DateTime.Now;
   await dB.Transactions.AddAsync(transaction);
   await dB.SaveChangesAsync();
 
-  return Results.Json(transaction.InsertDateTime);
+  var insertedObject = new { insertDateTime = DateTime.Now};
+  return Results.Json(insertedObject, statusCode: 200);
 });
 
 app.MapDelete("/api/v1/Transaction/Delete/{id}", async (string id, ILogger<FileLogger> logger, TransactionDBContext dB) =>
