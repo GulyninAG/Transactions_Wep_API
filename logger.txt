@@ -34,3 +34,113 @@
 12/27/2024 13:25:21. Application started. Press Ctrl+C to shut down.
 12/27/2024 13:25:21. Hosting environment: Development
 12/27/2024 13:25:21. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 12:03:09. Now listening on: http://localhost:5133
+02/03/2025 12:03:09. Application started. Press Ctrl+C to shut down.
+02/03/2025 12:03:09. Hosting environment: Development
+02/03/2025 12:03:09. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 12:03:57. Дата не может быть в будущем.
+02/03/2025 12:03:57. An unhandled exception has occurred while executing the request.
+02/03/2025 12:04:34. Дата не может быть в будущем.
+02/03/2025 12:04:34. An unhandled exception has occurred while executing the request.
+02/03/2025 12:05:34. Дата не может быть в будущем.
+02/03/2025 12:05:34. An unhandled exception has occurred while executing the request.
+02/03/2025 12:06:51. An unhandled exception has occurred while executing the request.
+02/03/2025 12:09:02. An unhandled exception has occurred while executing the request.
+02/03/2025 12:10:03. Now listening on: http://localhost:5133
+02/03/2025 12:10:03. Application started. Press Ctrl+C to shut down.
+02/03/2025 12:10:03. Hosting environment: Development
+02/03/2025 12:10:03. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 12:10:14. An unhandled exception has occurred while executing the request.
+02/03/2025 12:10:32. Дата не может быть в будущем.
+02/03/2025 12:10:32. An unhandled exception has occurred while executing the request.
+02/03/2025 12:14:12. Now listening on: http://localhost:5133
+02/03/2025 12:14:12. Application started. Press Ctrl+C to shut down.
+02/03/2025 12:14:12. Hosting environment: Development
+02/03/2025 12:14:12. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 12:14:16. Дата не может быть в будущем.
+02/03/2025 12:14:16. An unhandled exception has occurred while executing the request.
+02/03/2025 14:18:15. Application startup exception
+02/03/2025 14:18:15. Hosting failed to start
+02/03/2025 14:18:44. Application startup exception
+02/03/2025 14:18:44. Hosting failed to start
+02/03/2025 14:22:49. Application startup exception
+02/03/2025 14:22:49. Hosting failed to start
+02/03/2025 15:06:12. Now listening on: http://localhost:5133
+02/03/2025 15:06:12. Application started. Press Ctrl+C to shut down.
+02/03/2025 15:06:12. Hosting environment: Development
+02/03/2025 15:06:12. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 15:06:29. Произошла ошибка: Failed to bind parameter "Guid id" from "7a962ae1-caa8-44ce-811c-73ждждждb828c".
+02/03/2025 15:18:28. Now listening on: http://localhost:5133
+02/03/2025 15:18:28. Application started. Press Ctrl+C to shut down.
+02/03/2025 15:18:28. Hosting environment: Development
+02/03/2025 15:18:28. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 15:18:46. Ошибка валидации: Дата транзакции не может быть в будущем.
+02/03/2025 15:18:46. Произошла ошибка: Validation failed: 
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error
+02/03/2025 15:18:59. Ошибка валидации: Сумма должна быть положительной., Дата транзакции не может быть в будущем.
+02/03/2025 15:18:59. Произошла ошибка: Validation failed: 
+ -- Amount: Сумма должна быть положительной. Severity: Error
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error
+02/03/2025 15:19:37. Произошла ошибка: Failed to read parameter "Transaction transaction" from the request body as JSON.
+02/03/2025 15:20:58. Now listening on: http://localhost:5133
+02/03/2025 15:20:58. Application started. Press Ctrl+C to shut down.
+02/03/2025 15:20:58. Hosting environment: Development
+02/03/2025 15:20:58. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 15:23:16. Произошла ошибка: Failed to read parameter "Transaction transaction" from the request body as JSON.
+02/03/2025 15:26:42. Ошибка валидации: Дата транзакции не может быть в будущем.
+02/03/2025 15:26:42. Произошла ошибка: Validation failed: 
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error
+02/03/2025 17:26:32. Now listening on: http://localhost:5133
+02/03/2025 17:26:32. Application started. Press Ctrl+C to shut down.
+02/03/2025 17:26:32. Hosting environment: Development
+02/03/2025 17:26:32. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 17:29:54. Now listening on: http://localhost:5133
+02/03/2025 17:29:54. Application started. Press Ctrl+C to shut down.
+02/03/2025 17:29:54. Hosting environment: Development
+02/03/2025 17:29:54. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 17:30:56. Ошибка валидации: Сумма должна быть положительной.
+02/03/2025 17:30:56. Произошла ошибка: Validation failed: 
+ -- Amount: Сумма должна быть положительной. Severity: Error
+02/03/2025 17:31:13. Ошибка валидации: Сумма должна быть положительной., Дата транзакции не может быть в будущем.
+02/03/2025 17:31:13. Произошла ошибка: Validation failed: 
+ -- Amount: Сумма должна быть положительной. Severity: Error
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error
+02/03/2025 17:31:33. Произошла ошибка: Failed to read parameter "Transaction transaction" from the request body as JSON.
+02/03/2025 17:32:02. Произошла ошибка: Failed to read parameter "Transaction transaction" from the request body as JSON.
+02/03/2025 17:32:21. Ошибка валидации: Сумма должна быть положительной., Дата транзакции не может быть в будущем.
+02/03/2025 17:32:21. Произошла ошибка: Validation failed: 
+ -- Amount: Сумма должна быть положительной. Severity: Error
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error
+02/03/2025 17:32:45. Транзакция не найдена.
+02/03/2025 17:32:45. Произошла ошибка: Транзакция не найдена.
+02/03/2025 17:33:34. Now listening on: http://localhost:5133
+02/03/2025 17:33:34. Application started. Press Ctrl+C to shut down.
+02/03/2025 17:33:34. Hosting environment: Development
+02/03/2025 17:33:34. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/03/2025 17:33:51. Превышено максимальное количество транзакций (100).
+02/03/2025 17:33:51. Ошибка при добавлении транзакции: Превышено максимальное количество транзакций (100).
+02/03/2025 17:33:51. Произошла ошибка: Превышено максимальное количество транзакций (100).
+02/04/2025 06:16:38. Now listening on: http://[::]:8080
+02/04/2025 06:16:38. Application started. Press Ctrl+C to shut down.
+02/04/2025 06:16:38. Hosting environment: Development
+02/04/2025 06:16:38. Content root path: /app
+02/04/2025 06:19:56. Now listening on: http://[::]:8080
+02/04/2025 06:19:56. Application started. Press Ctrl+C to shut down.
+02/04/2025 06:19:56. Hosting environment: Development
+02/04/2025 06:19:56. Content root path: /app
+02/04/2025 06:36:46. Now listening on: http://[::]:8080
+02/04/2025 06:36:46. Application started. Press Ctrl+C to shut down.
+02/04/2025 06:36:46. Hosting environment: Development
+02/04/2025 06:36:46. Content root path: /app
+02/04/2025 06:37:26. Now listening on: http://[::]:8080
+02/04/2025 06:37:26. Application started. Press Ctrl+C to shut down.
+02/04/2025 06:37:26. Hosting environment: Development
+02/04/2025 06:37:26. Content root path: /app
+02/04/2025 06:41:53. Now listening on: http://[::]:8080
+02/04/2025 06:41:53. Application started. Press Ctrl+C to shut down.
+02/04/2025 06:41:53. Hosting environment: Development
+02/04/2025 06:41:53. Content root path: /app
+02/04/2025 07:38:48. Now listening on: http://[::]:8080
+02/04/2025 07:38:48. Application started. Press Ctrl+C to shut down.
+02/04/2025 07:38:48. Hosting environment: Development
+02/04/2025 07:38:48. Content root path: /app

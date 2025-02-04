@@ -1,4 +1,4 @@
-﻿namespace Transactions_Web_API.Models
+﻿namespace Transactions_Web_API.Domain
 {
   public record Transaction
   {
