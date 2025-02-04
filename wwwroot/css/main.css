@@ -1,0 +1,15 @@
+﻿body {
+    padding: 10px;
+}
+
+td {
+    padding: 2px;
+}
+
+button {
+    margin: 2px;
+}
+
+.btn-rmv {
+background-color: #0d6efd !important;
+}
