@@ -176,3 +176,69 @@
 02/04/2025 21:30:54. Application started. Press Ctrl+C to shut down.
 02/04/2025 21:30:54. Hosting environment: Development
 02/04/2025 21:30:54. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 09:22:00. Application started. Press Ctrl+C to shut down.
+02/05/2025 09:22:00. Hosting environment: Development
+02/05/2025 09:22:00. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 09:26:42. Application started. Press Ctrl+C to shut down.
+02/05/2025 09:26:42. Hosting environment: Development
+02/05/2025 09:26:42. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 09:30:09. Application started. Press Ctrl+C to shut down.
+02/05/2025 09:30:09. Hosting environment: Development
+02/05/2025 09:30:09. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:01:51. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:01:51. Hosting environment: Development
+02/05/2025 11:01:51. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:08:09. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:08:09. Hosting environment: Development
+02/05/2025 11:08:09. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:10:16. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:10:16. Hosting environment: Development
+02/05/2025 11:10:16. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:11:09. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:11:09. Hosting environment: Development
+02/05/2025 11:11:09. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:12:28. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:12:28. Hosting environment: Development
+02/05/2025 11:12:28. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:12:58. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:12:58. Hosting environment: Development
+02/05/2025 11:12:58. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:16:11. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:16:11. Hosting environment: Development
+02/05/2025 11:16:11. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:16:45. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:16:45. Hosting environment: Development
+02/05/2025 11:16:45. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:17:37. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:17:37. Hosting environment: Development
+02/05/2025 11:17:37. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:18:35. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:18:35. Hosting environment: Development
+02/05/2025 11:18:35. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:20:24. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:20:24. Hosting environment: Development
+02/05/2025 11:20:24. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:24:37. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:24:37. Hosting environment: Development
+02/05/2025 11:24:37. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:26:28. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:26:28. Hosting environment: Development
+02/05/2025 11:26:28. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 11:27:18. Application started. Press Ctrl+C to shut down.
+02/05/2025 11:27:18. Hosting environment: Development
+02/05/2025 11:27:18. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 12:38:17. Application started. Press Ctrl+C to shut down.
+02/05/2025 12:38:17. Hosting environment: Development
+02/05/2025 12:38:17. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 14:08:49. Application started. Press Ctrl+C to shut down.
+02/05/2025 14:08:49. Hosting environment: Development
+02/05/2025 14:08:49. Content root path: C:\Users\Alex\source\repos\Transactions_Web_API
+02/05/2025 14:09:17. Ошибка валидации: Дата транзакции не может быть в будущем.
+02/05/2025 14:09:23. Ошибка валидации: Дата транзакции не может быть в будущем.
+02/05/2025 14:09:23. Ошибка валидации: Дата транзакции не может быть в будущем.
+02/05/2025 14:09:25. Произошла ошибка: Validation failed: 
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error
+02/05/2025 14:09:25. Произошла ошибка: Validation failed: 
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error
+02/05/2025 14:09:25. Произошла ошибка: Validation failed: 
+ -- TransactionDate: Дата транзакции не может быть в будущем. Severity: Error

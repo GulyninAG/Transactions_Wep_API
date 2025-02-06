@@ -21,10 +21,20 @@ builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<IValidator<Transaction>, TransactionValidator>();
 builder.Services.AddSingleton<ILoggerService, LoggerService>();
+builder.Services.AddCors(options =>
+{
+  options.AddPolicy("AllowAllOrigins", policy =>
+  {
+    policy.AllowAnyOrigin() 
+          .AllowAnyMethod() 
+          .AllowAnyHeader();
+  });
+});
 
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseCors("AllowAllOrigins");
 app.UseStatusCodePages();
 app.UseDefaultFiles();
 app.UseStaticFiles();
